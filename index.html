@@ -1,0 +1,1062 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="dark">
+  <header class="relative">
+    <div class="fixed px-4 sm:px-6 lg:px-8 w-full flex justify-between items-center h-16 md:h-20 z-50 backdrop-blur-lg">
+      <div class="flex justify-center items-center gap-3 logo">
+        <a href=""><img class="transition-all duration-200 w-10 h-10" src="images/logo.png" /></a>
+        <a class="flex flex-col items-center leading-none justify-center font-black" href="">
+          <span class="text-white font-montserrat text-lg">URBAN<span class="text-primary">CODE</span></span>
+          <span style="letter-spacing: 5px"
+            class="text-muted font-poppins tracking-[0.35em] font-medium text-[10px]">SOLUTIONS</span>
+        </a>
+      </div>
+      <nav class="hidden md:flex gap-1 justify-center items-center">
+        <a class="[&.active]:bg-primary/10 
+   [&.active]:text-primary font-medium rounded-lg transition-all text-sm duration-200  py-2 px-4 active"
+          href="">Home</a>
+        <a class="text-muted font-medium rounded-lg transition-all text-sm duration-200 hover:text-white hover:bg-[#0f162980] py-2 px-4"
+          href="about.html">About</a>
+        <a class="text-muted font-medium rounded-lg transition-all text-sm duration-200 hover:text-white hover:bg-[#0f162980] py-2 px-4"
+          href="">Services</a>
+        <a class="text-muted font-medium rounded-lg transition-all text-sm duration-200 hover:text-white hover:bg-[#0f162980] py-2 px-4"
+          href="">Portfolio</a>
+        <a class="text-muted font-medium rounded-lg transition-all text-sm duration-200 hover:text-white hover:bg-[#0f162980] py-2 px-4"
+          href="">Contact</a>
+      </nav>
+      <a class="hidden gradient-background hover:bg-red-400 text-sm px-5 py-2.5 rounded-4xl font-medium text-white md:flex gap-2 justify-center items-center"
+        href="">
+        <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span> Get
+        Started</a>
+      <button id="menuBtn" class="md:hidden text-xl text-white">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobileMenu"
+      class="fixed top-0 left-0 w-full max-h-96 pt-4 bg-[#030711f2] backdrop-blur-xl transform flex flex-col -translate-y-150 transition-transform duration-400 z-40 px-4 pb-4">
+      <a href="" class="px-4 py-3 rounded-lg text-sm font-medium [&.active]:bg-primary/10 
+   [&.active]:text-primary active text-muted">Home</a>
+      <a href="" class="px-4 py-3 mt-2 rounded-lg text-sm font-medium text-muted">About</a>
+      <a href="" class="px-4 py-3 mt-2 rounded-lg text-sm font-medium text-muted">Services</a>
+      <a href="" class="px-4 py-3 mt-2 rounded-lg text-sm font-medium text-muted">Portfolio</a>
+      <a href="" class="px-4 py-3 mt-2 rounded-lg text-sm font-medium text-muted">Contact</a>
+      <a class="bg-primary text-white rounded-xl py-2 px-5 font-semibold text-center mt-4">
+        Get Started
+      </a>
+    </div>
+  </header>
+  <main class="main-gradient">
+    <section
+      class="px-4 sm:px-6 lg:px-8 pt-20 pb-6 md:pb-20 relative overflow-hidden text-white lg:grid lg:grid-cols-2 gap-12">
+      <div
+        class="absolute inset-0 z-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,black_70%,transparent_110%)] pointer-events-none">
+      </div>
+      <div class="absolute inset-0 z-0 hero-grid pointer-events-none"></div>
+      <div class="relative z-10 text-primary col-span-1">
+        <div class="flex justify-center lg:justify-start">
+          <p
+            class="mb-8 inline-flex justify-center items-center rounded-4xl gap-1 py-2 px-4 bg-[#ff05261a] border border-[#ff052633]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-sparkles h-4 w-4">
+              <path
+                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+              </path>
+              <path d="M20 3v4"></path>
+              <path d="M22 5h-4"></path>
+              <path d="M4 17v2"></path>
+              <path d="M5 18H3"></path>
+            </svg>
+            <span class="text-sm font-light leading-relaxed text-nowrap">
+              8+ Years of Excellence in IT Solutions
+            </span>
+          </p>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center lg:text-start font-bold text-white mb-6">
+          Building the Future of<br /><span class="gradient-text">Digital Solutions</span>
+        </h1>
+        <p class="text-muted text-center lg:text-start text-lg md:text-xl mb-11">
+          We create secure, scalable, and high-performance web applications
+          that transform your business vision into reality.
+        </p>
+        <div class="flex flex-col items-center sm:flex-row gap-4 justify-center lg:justify-start">
+          <a class="bg-[#ff0526] text-lg font-bold h-16 px-10 hover:bg-red-600 hover:-translate-y-0.5 hover:shadow-xl shadow-primary/30 transition-all duration-200 rounded-2xl text-white inline-flex gap-2 justify-center items-center"
+            href="">
+            Get Started <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="text-lg font-bold h-16 px-10 border-2 border-[#e1e7ef33] hover:text-primary hover:border-primary transition-all duration-200 rounded-2xl text-white inline-flex gap-2 justify-center items-center"
+            href="">
+            Our Services</a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-items-center my-8">
+          <div class="col-span-1 flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full bg-primary"></div>
+            <span class="text-muted">250+ Projects Delivered</span>
+          </div>
+          <div class="col-span-1 flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full bg-primary"></div>
+            <span class="text-muted">100% Client Satisfaction</span>
+          </div>
+          <div class="col-span-1 flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full bg-primary"></div>
+            <span class="text-muted">Enterprise-Grade Security</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative z-10 hidden col-span-1 lg:flex items-center">
+        <div class="relative">
+          <img class="rounded-lg shadow-2xl shadow-[#ff052633]" src="images/hero-image-Dal1DjGd.jpg" alt="" />
+          <div
+            class="absolute -right-4 -top-4 w-20 h-20 rounded-2xl bg-[#ff05261a] border border-[#ff052633] flex items-center justify-center bounce backdrop-blur-xs">
+            <span class="text-2xl font-bold gradient-text">8+</span>
+          </div>
+          <div
+            class="absolute -bottom-4 -left-4 px-4 py-2 rounded-xl bounce bg-[#040A1AE6] backdrop-blur-sm border border-[#1d283a] flex items-center gap-2 "
+            style="animation-delay: 1s">
+            <div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+            <span class="text-sm font-medium">Always Innovating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+    <section class="grid grid-cols-2 lg:grid-cols-4 px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 gap-8">
+      <div
+        class="col-span-1 sm:p-3 md:p-7 flex flex-col items-center justify-center gap-1 hover:bg-[#0f16294d] rounded-2xl transition-all duration-200">
+        <div class="text-primary bg-primary/10 h-12 w-12 flex items-center justify-center rounded-xl mb-3">
+          <i class="fa-regular fa-clock text-lg"></i>
+        </div>
+        <div class="text-white text-3xl md:text-4xl font-bold text-center">8+</div>
+        <div class="text-white text-center">Years Experience</div>
+        <div class="text-muted text-[14px] text-center">Industry expertise</div>
+      </div>
+      <div
+        class="col-span-1 sm:p-3 md:p-7 flex flex-col items-center justify-center gap-1 hover:bg-[#0f16294d] rounded-2xl transition-all duration-200">
+        <div class="text-primary bg-primary/10 h-12 w-12 flex items-center justify-center rounded-xl mb-3">
+          <i class="fa-solid fa-arrow-trend-up text-lg"></i>
+        </div>
+        <div class="text-white text-3xl md:text-4xl font-bold text-center">250+</div>
+        <div class="text-white text-center">Projects Delivered</div>
+        <div class="text-muted text-[14px] text-center">Successful launches</div>
+      </div>
+      <div
+        class="col-span-1 sm:p-3 md:p-7 flex flex-col items-center justify-center gap-1 hover:bg-[#0f16294d] rounded-2xl transition-all duration-200">
+        <div class="text-primary bg-primary/10 h-12 w-12 flex items-center justify-center rounded-xl mb-3">
+          <i class="fa-solid fa-user-group text-lg"></i>
+        </div>
+        <div class="text-white text-3xl md:text-4xl font-bold text-center">100+</div>
+        <div class="text-white text-center">Happy Clients</div>
+        <div class="text-muted text-[14px] text-center">Client satisfaction</div>
+      </div>
+      <div
+        class="col-span-1 sm:p-3 md:p-7 flex flex-col items-center justify-center gap-1 hover:bg-[#0f16294d] rounded-2xl transition-all duration-200">
+        <div class="text-primary bg-primary/10 h-12 w-12 flex items-center justify-center rounded-xl mb-3">
+          <i class="fa-solid fa-award text-lg"></i>
+        </div>
+        <div class="text-white text-3xl md:text-4xl font-bold text-center">24/7</div>
+        <div class="text-white text-center">Support</div>
+        <div class="text-muted text-[14px] text-center">Always available</div>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+    <section class="px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#051729] grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div>
+        <div class="text-primary col-span-1">
+          <p class="inline-flex font-medium mb-4 rounded-4xl gap-1 py-1.5 px-4 bg-primary/10">
+            <span class="text-sm">Our story</span>
+          </p>
+        </div>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-6">
+          Building Digital <br /><span class="gradient-text">Excellence</span>
+          Since 2025
+        </h2>
+        <div class="space-y-4 text-muted leading-relaxed">
+          <p>
+            Founded in 2025, UrbanCode Solution emerged from a simple belief:
+            every business deserves access to world-class technology
+            solutions, regardless of their size.
+          </p>
+          <p>
+            What started as a small team of passionate developers has grown
+            into a full-service IT company, serving clients across industries
+            and continents. Our journey has been defined by continuous
+            learning, adaptation, and an unwavering commitment to excellence.
+          </p>
+        </div>
+        <div class="flex justify-start pt-8">
+          <a class="text-sm text-nowrap font-semibold flex items-center justify-center gap-4 px-5 py-2 border-2 border-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-xl text-primary"
+            href="">
+            Learn more about us <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 my-auto">
+        <div
+          class="col-span-1 inline-flex flex-col justify-center items-center bg-[#040A1A] rounded-2xl border border-[#1d283a] hover:border-primary transition-all p-9 duration-200 shadow-2xl hover:shadow-primary/20">
+          <h1 class="text-4xl text-center text-primary font-bold mb-2">2025</h1>
+          <p class="text-muted text-sm text-center">Founded</p>
+        </div>
+        <div
+          class="col-span-1 inline-flex flex-col justify-center items-center bg-[#040A1A] rounded-2xl border border-[#1d283a] hover:border-primary transition-all p-9 duration-200 shadow-2xl hover:shadow-primary/20">
+          <h1 class="text-4xl text-center text-primary font-bold mb-2">5+</h1>
+          <p class="text-muted text-sm text-center">Team Members</p>
+        </div>
+        <div
+          class="col-span-1 inline-flex flex-col justify-center items-center bg-[#040A1A] rounded-2xl border border-[#1d283a] hover:border-primary transition-all p-9 duration-200 shadow-2xl hover:shadow-primary/20">
+          <h1 class="text-4xl text-center text-primary font-bold mb-2">8+</h1>
+          <p class="text-muted text-sm text-center">Countries Served</p>
+        </div>
+        <div
+          class="col-span-1 inline-flex flex-col justify-center items-center bg-[#040A1A] rounded-2xl border border-[#1d283a] hover:border-primary transition-all p-9 duration-200 shadow-2xl hover:shadow-primary/20">
+          <h1 class="text-4xl text-center text-primary font-bold mb-2">100%</h1>
+          <p class="text-muted text-sm text-center">Client Satisfaction</p>
+        </div>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+    <section class="grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#040a1a] gap-16">
+      <div class="text-primary flex flex-col justify-center items-start col-span-1 mb-4.5">
+        <p class="inline-flex font-medium mb-4 rounded-4xl gap-1 py-1.5 px-4 bg-primary/10">
+          <span class="text-sm">Why choose us</span>
+        </p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
+          We Build Solutions That
+          <span class="gradient-text">Matter</span>
+        </h2>
+        <p class="text-lg text-muted mb-8">
+          With over 8 years of experience and 250+ successful projects, we've
+          mastered the art of turning complex challenges into elegant digital
+          solutions.
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="flex -space-x-3">
+            <div
+              class="w-10 h-10 rounded-full bg-linear-to-br from-primary/20 to-primary/40 border-2 border-[#040a1a] flex items-center justify-center text-xs font-medium">
+              1
+            </div>
+            <div
+              class="w-10 h-10 rounded-full bg-linear-to-br from-primary/20 to-primary/40 border-2 border-[#040a1a] flex items-center justify-center text-xs font-medium">
+              2
+            </div>
+            <div
+              class="w-10 h-10 rounded-full bg-linear-to-br from-primary/20 to-primary/40 border-2 border-[#040a1a] flex items-center justify-center text-xs font-medium">
+              3
+            </div>
+            <div
+              class="w-10 h-10 rounded-full bg-linear-to-br from-primary/20 to-primary/40 border-2 border-[#040a1a] flex items-center justify-center text-xs font-medium">
+              4
+            </div>
+          </div>
+          <div class="text-sm">
+            <div class="font-semibold text-white">Trusted by 100+ clients</div>
+            <div class="text-muted">Worldwide</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-1 justify-center items-center grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div
+          class="col-span-1 hover:border-primary transition-all duration-200 card-3 p-5.5 sm:p-6.75 bg-[#030711] border border-[#1d283a] rounded-xl flex flex-col justify-center items-start">
+          <div
+            class="mb-4.5 icon3 transition-all duration-200 relative w-10 h-10 bg-red-950/40 rounded-lg flex items-center justify-center">
+            <i class="text-primary text-xl fa-regular fa-headphones"></i>
+          </div>
+          <h3 class="font-semibold mb-2 text-white">Security First</h3>
+          <p class="text-sm text-muted">
+            Enterprise-grade security measures protect your data and
+            applications.
+          </p>
+        </div>
+        <div
+          class="col-span-1 hover:border-primary transition-all duration-200 card-3 p-5.5 sm:p-6.75 bg-[#030711] border border-[#1d283a] rounded-xl flex flex-col justify-center items-start">
+          <div
+            class="mb-4.5 icon3 transition-all duration-200 relative w-10 h-10 bg-red-950/40 rounded-lg flex items-center justify-center">
+            <i class="text-primary text-xl fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="font-semibold mb-2 text-white">High Performance</h3>
+          <p class="text-sm text-muted">
+            Optimized code and infrastructure for lightning-fast experiences.
+          </p>
+        </div>
+        <div
+          class="col-span-1 hover:border-primary transition-all duration-200 card-3 p-5.5 sm:p-6.75 bg-[#030711] border border-[#1d283a] rounded-xl flex flex-col justify-center items-start">
+          <div
+            class="mb-4.5 icon3 transition-all duration-200 relative w-10 h-10 bg-red-950/40 rounded-lg flex items-center justify-center">
+            <i class="text-primary text-xl fa-regular fa-heart"></i>
+          </div>
+          <h3 class="font-semibold mb-2 text-white">Client-Centric</h3>
+          <p class="text-sm text-muted">
+            Your success is our priority. We listen, adapt, and deliver.
+          </p>
+        </div>
+        <div
+          class="col-span-1 hover:border-primary transition-all duration-200 card-3 p-5.5 sm:p-6.75 bg-[#030711] border border-[#1d283a] rounded-xl flex flex-col justify-center items-start">
+          <div
+            class="mb-4.5 icon3 transition-all duration-200 relative w-10 h-10 bg-red-950/40 rounded-lg flex items-center justify-center">
+            <i class="text-primary text-xl fa-regular fa-lightbulb"></i>
+          </div>
+          <h3 class="font-semibold mb-2 text-white">Innovative Solutions</h3>
+          <p class="text-sm text-muted">
+            Cutting-edge technologies to keep you ahead of the competition.
+          </p>
+        </div>
+        <div
+          class="col-span-1 hover:border-primary transition-all duration-200 card-3 p-5.5 sm:p-6.75 bg-[#030711] border border-[#1d283a] rounded-xl flex flex-col justify-center items-start">
+          <div
+            class="mb-4.5 icon3 transition-all duration-200 relative w-10 h-10 bg-red-950/40 rounded-lg flex items-center justify-center">
+            <i class="text-primary text-xl fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="font-semibold mb-2 text-white">Goal-Oriented</h3>
+          <p class="text-sm text-muted">
+            Every solution is designed to meet your specific business
+            objectives.
+          </p>
+        </div>
+        <div
+          class="col-span-1 hover:border-primary transition-all duration-200 card-3 p-5.5 sm:p-6.75 bg-[#030711] border border-[#1d283a] rounded-xl flex flex-col justify-center items-start">
+          <div
+            class="mb-4.5 icon3 transition-all duration-200 relative w-10 h-10 bg-red-950/40 rounded-lg flex items-center justify-center">
+            <i class="text-primary text-xl fa-solid fa-arrows-rotate"></i>
+          </div>
+          <h3 class="font-semibold mb-2 text-white">Ongoing Support</h3>
+          <p class="text-sm text-muted">
+            Continuous maintenance and updates to keep your systems running
+            smoothly.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#051729]">
+      <div class="text-primary col-span-1 flex flex-col justify-center items-center mb-12">
+        <p class="inline-flex font-medium mb-4 rounded-4xl gap-1 py-1.5 px-4 bg-primary/10">
+          <span class="text-sm">Our services</span>
+        </p>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl mb-6 text-center font-bold text-white">
+          Solutions That Drive <span class="gradient-text">Growth</span>
+        </h1>
+        <p class="text-muted text-lg text-center max-w-2xl">
+          From concept to deployment, we deliver comprehensive IT solutions
+          that help businesses thrive in the digital landscape.
+        </p>
+      </div>
+      <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div
+            class="col-span-1 card hover:shadow-lg shadow-black/20 hover:border-red bg-[#040a1a] border border-[#1d283a] rounded-2xl p-5.5 sm:p-6.75">
+            <div
+              class="text-primary icon transition-all duration-200 mb-6.75 bg-primary/10 h-14 w-14 inline-flex items-center justify-center rounded-xl">
+              <i class="fa-solid text-2xl fa-laptop"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-white">
+              Web &amp; Application Development
+            </h3>
+            <p class="text-muted text-[18px] leading-relaxed">
+              End-to-end web applications built with modern technologies for
+              optimal performance.
+            </p>
+          </div>
+          <div
+            class="col-span-1 card hover:shadow-lg shadow-black/20 hover:border-primary bg-[#040a1a] border border-[#1d283a] rounded-2xl p-5.5 sm:p-6.75">
+            <div
+              class="text-primary icon transition-all duration-200 mb-6.75 bg-primary/10 h-14 w-14 inline-flex items-center justify-center rounded-xl">
+              <i class="fa-solid text-2xl fa-rocket"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-white">
+              SaaS &amp; Startup MVP Development
+            </h3>
+            <p class="text-muted text-[18px] leading-relaxed">
+              We help founders convert ideas into production-ready SaaS
+              products quickly.
+            </p>
+          </div>
+          <div
+            class="col-span-1 card hover:shadow-lg shadow-black/20 hover:border-primary bg-[#040a1a] border border-[#1d283a] rounded-2xl p-5.5 sm:p-6.75">
+            <div
+              class="text-primary icon transition-all duration-200 mb-6.75 bg-primary/10 h-14 w-14 inline-flex items-center justify-center rounded-xl">
+              <i class="fa-solid text-2xl fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-white">
+              Mobile Apps Development
+            </h3>
+            <p class="text-muted text-[18px] leading-relaxed">
+              Native and cross-platform mobile applications for iOS and
+              Android devices.
+            </p>
+          </div>
+          <div
+            class="col-span-1 card hover:shadow-lg shadow-black/20 hover:border-primary bg-[#040a1a] border border-[#1d283a] rounded-2xl p-5.5 sm:p-6.75">
+            <div
+              class="text-primary icon transition-all duration-200 mb-6.75 bg-primary/10 h-14 w-14 inline-flex items-center justify-center rounded-xl">
+              <i class="fa-solid text-2xl fa-cart-shopping"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-white">
+              E-Commerce Systems
+            </h3>
+            <p class="text-muted text-[18px] leading-relaxed">
+              Scalable online stores with secure payment integration and
+              inventory management.
+            </p>
+          </div>
+          <div
+            class="col-span-1 card hover:shadow-lg shadow-black/20 hover:border-primary bg-[#040a1a] border border-[#1d283a] rounded-2xl p-5.5 sm:p-6.75">
+            <div
+              class="text-primary icon transition-all duration-200 mb-6.75 bg-primary/10 h-14 w-14 inline-flex items-center justify-center rounded-xl">
+              <i class="fa-solid text-2xl fa-palette"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-white">
+              UI/UX Design
+            </h3>
+            <p class="text-muted text-[18px] leading-relaxed">
+              Intuitive dashboards and management systems tailored to your
+              workflow.
+            </p>
+          </div>
+          <div
+            class="col-span-1 card hover:shadow-lg shadow-black/20 hover:border-primary bg-[#040a1a] border border-[#1d283a] rounded-2xl p-5.5 sm:p-6.75">
+            <div
+              class="text-primary icon transition-all duration-200 mb-6.75 bg-primary/10 h-14 w-14 inline-flex items-center justify-center rounded-xl">
+              <i class="fa-solid text-2xl fa-wrench"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3 text-white">
+              Maintenance & Support
+            </h3>
+            <p class="text-muted text-[18px] leading-relaxed">
+              Long-term support, optimization, upgrades, and performance
+              monitoring.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <a class="text-[#E1E7Ef] font-semibold hover:text-primary transition-all duration-200 h-12 px-8 rounded-xl inline-flex justify-center gap-2 items-center border-2 border-[#e1e7ef33] hover:border-primary"
+          href="">View All Services <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-arrow-right h-4 w-4" data-darkreader-inline-stroke=""
+            style="--darkreader-inline-stroke: currentColor;">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg></a>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+    <section class="px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#040a1a]">
+      <div class="text-primary col-span-1 flex flex-col justify-center items-center mb-12">
+        <p class="inline-flex font-medium mb-4 rounded-4xl gap-1 py-1.5 px-4 bg-primary/10">
+          <span class="text-sm">Our process</span>
+        </p>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl mb-4 font-bold text-white">
+          How We <span class="gradient-text">Work</span>
+        </h1>
+        <p class="text-muted text-lg text-center max-w-2xl">
+          A streamlined approach that ensures quality delivery and exceeds
+          expectations.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div class="col-span-1 card2">
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="h-20 mb-6 icon2 transition-all duration-200 relative w-20 bg-[#030711] rounded-2xl flex items-center justify-center border border-[#1d283a]">
+              <i class="text-primary text-2xl fa-regular fa-message"></i>
+              <span
+                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">01</span>
+            </div>
+          </div>
+          <h3 class="text-lg text-white font-semibold mb-2 text-center">
+            Discovery
+          </h3>
+          <p class="text-sm text-muted leading-relaxed text-center">
+            We start by understanding your business goals, challenges, and
+            requirements through in-depth consultations.
+          </p>
+        </div>
+        <div class="col-span-1 card2">
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="h-20 mb-6 icon2 transition-all duration-200 relative w-20 bg-[#030711] rounded-2xl flex items-center justify-center border border-[#1d283a]">
+              <i class="text-primary text-2xl fa-regular fa-lightbulb"></i>
+              <span
+                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">02</span>
+            </div>
+          </div>
+          <h3 class="text-lg text-white font-semibold mb-2 text-center">
+            Planning
+          </h3>
+          <p class="text-sm text-muted leading-relaxed text-center">
+            Our team designs a comprehensive solution architecture and project
+            roadmap tailored to your needs.
+          </p>
+        </div>
+        <div class="col-span-1 card2">
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="h-20 mb-6 icon2 transition-all duration-200 relative w-20 bg-[#030711] rounded-2xl flex items-center justify-center border border-[#1d283a]">
+              <i class="text-primary text-2xl fa-solid fa-code"></i>
+              <span
+                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">03</span>
+            </div>
+          </div>
+          <h3 class="text-lg text-white font-semibold mb-2 text-center">
+            Development
+          </h3>
+          <p class="text-sm text-muted leading-relaxed text-center">
+            We build your solution using agile methodologies, ensuring quality
+            code and regular progress updates.
+          </p>
+        </div>
+        <div class="col-span-1 card2">
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="h-20 mb-6 icon2 transition-all duration-200 relative w-20 bg-[#030711] rounded-2xl flex items-center justify-center border border-[#1d283a]">
+              <i class="text-primary text-2xl fa-solid fa-rocket"></i>
+              <span
+                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">04</span>
+            </div>
+          </div>
+          <h3 class="text-lg text-white font-semibold mb-2 text-center">
+            Deployment
+          </h3>
+          <p class="text-sm text-muted leading-relaxed text-center">
+            After rigorous testing, we launch your solution with zero-downtime
+            deployment strategies.
+          </p>
+        </div>
+        <div class="col-span-1 card2">
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="h-20 mb-6 icon2 transition-all duration-200 relative w-20 bg-[#030711] rounded-2xl flex items-center justify-center border border-[#1d283a]">
+              <i class="text-primary text-2xl fa-regular fa-headphones"></i>
+              <span
+                class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">05</span>
+            </div>
+          </div>
+          <h3 class="text-lg text-white font-semibold mb-2 text-center">
+            Support
+          </h3>
+          <p class="text-sm text-muted leading-relaxed text-center">
+            We provide ongoing maintenance, updates, and 24/7 support to
+            ensure optimal performance.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+    <section class="grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#040a1a] gap-16">
+      <div class="text-primary flex flex-col justify-center items-start col-span-1 mb-4.5">
+        <p class="inline-flex font-medium mb-4 rounded-4xl gap-1 py-1.5 px-4 bg-primary/10">
+          <span class="text-sm">FAQ</span>
+        </p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
+          Frequently Asked
+          <span class="gradient-text">Questions</span>
+        </h2>
+        <p class="text-lg text-muted mb-8">
+          Got questions? We've got answers. If you can't find what you're
+          looking for, feel free to reach out to our team.
+        </p>
+        <div class="bg-[#030711] rounded-2xl border w-full border-[#1d283a] p-5.5 md:p-6.75">
+          <h3 class="font-semibold text-white text-lg mb-2">
+            Still have questions?
+          </h3>
+          <p class="text-muted text-sm mb-4">
+            Can't find the answer you're looking for? Our team is here to
+            help.
+          </p>
+          <a href="" class="inline-flex items-center text-primary font-medium hover:underline">Contact our team →</a>
+        </div>
+      </div>
+      <div class="col-span-1 space-y-6">
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              What services does UrbanCode Solution offer?
+            </span>
+
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              We offer a comprehensive range of IT services including
+              full-stack web development, custom admin panels, e-commerce
+              solutions, business automation systems, API integration, and
+              SaaS product development. Our team specializes in building
+              secure, scalable, and high-performance digital solutions
+              tailored to your specific business needs.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              How long does a typical project take to complete?
+            </span>
+
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              Project timelines vary based on complexity and scope. A simple
+              website might take 2-4 weeks, while complex web applications or
+              enterprise systems can take 3-6 months. During our initial
+              consultation, we provide a detailed timeline and milestone
+              schedule so you know exactly what to expect.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              What technologies do you work with?
+            </span>
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              We specialize in modern technologies including React, Next.js,
+              TypeScript, Node.js, MongoDB, and cloud platforms like AWS and
+              Google Cloud. We also work with Python, PostgreSQL, and various
+              other tools depending on project requirements. Our team stays
+              updated with the latest tech trends to deliver cutting-edge
+              solutions.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              Do you provide ongoing support after project completion?
+            </span>
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              Absolutely! We offer comprehensive post-launch support including
+              maintenance, updates, bug fixes, and performance optimization.
+              We provide various support packages ranging from basic
+              maintenance to 24/7 dedicated support, ensuring your systems run
+              smoothly at all times.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              How do you ensure the security of the applications you build?
+            </span>
+
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              Security is our top priority. We implement industry-standard
+              security practices including data encryption, secure
+              authentication, regular security audits, and compliance with
+              GDPR and other regulations. Our enterprise-grade security
+              measures protect your data and applications from potential
+              threats.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              What is your pricing model?
+            </span>
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              We offer flexible pricing models including fixed-price projects,
+              hourly rates, and retainer agreements. After understanding your
+              requirements, we provide a detailed proposal with transparent
+              pricing. We believe in delivering value and work within your
+              budget constraints without compromising quality.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              Can you work with our existing team?
+            </span>
+
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              Yes! We frequently collaborate with in-house teams to augment
+              their capabilities. Whether you need additional developers,
+              specialized expertise, or complete project management, we
+              seamlessly integrate with your existing workflows and team
+              structure.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item bg-[#030711] border border-[#1d283a] rounded-2xl overflow-hidden">
+          <button class="faq-btn cursor-pointer w-full flex justify-between items-center px-6 py-6 text-left">
+            <span class="text-lg font-semibold text-white">
+              How do we get started with UrbanCode Solution?
+            </span>
+            <svg class="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor"
+              stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content px-6 text-gray-400 transition-all duration-300 ease-in-out"
+            style="max-height: 0; overflow: hidden">
+            <div class="pb-6">
+              Getting started is easy! Simply reach out through our contact
+              form or email us directly. We'll schedule a free consultation to
+              discuss your project requirements, goals, and timeline. From
+              there, we'll provide a detailed proposal and begin the
+              development process once approved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+    <section class="min-h-screen px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#051729]">
+      <div class="text-primary col-span-1 flex flex-col gap-2 justify-center items-start md:items-center mb-12">
+        <p class="inline-flex font-medium mb-4 rounded-4xl gap-1 py-1.5 px-4 bg-primary/10">
+          <span class="text-sm">Contact us</span>
+        </p>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+          Get in <span class="gradient-text">Touch</span>
+        </h1>
+        <p class="text-muted text-lg text-start md:text-center max-w-2xl">
+          Have a project in mind? We'd love to hear from you. Send us a
+          message and we'll respond as soon as possible.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="col-span-1 space-y-6">
+          <div
+            class="p-4.5 flex gap-4 bg-[#040a1a] hover:border-primary/50 transition-all duration-200 rounded-xl border border-[#1d283a]">
+            <div>
+              <div
+                class="text-primary icon transition-all w-12 h-12 duration-200 bg-primary/10 inline-flex items-center justify-center rounded-xl">
+                <i class="fa-regular text-lg fa-envelope"></i>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-white">Email</h1>
+              <p class="text-muted break-all">urbancodesolution@gmail.com</p>
+            </div>
+          </div>
+          <div
+            class="p-4.5 flex gap-4 bg-[#040a1a] hover:border-primary/50 transition-all duration-200 rounded-xl border border-[#1d283a]">
+            <div>
+              <div
+                class="text-primary icon transition-all w-12 h-12 duration-200 bg-primary/10 inline-flex items-center justify-center rounded-xl">
+                <i class="fa-solid text-lg fa-phone"></i>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-white">Phone</h1>
+              <p class="text-muted">+91 78746 71101</p>
+            </div>
+          </div>
+          <div
+            class="p-4.5 flex gap-4 bg-[#040a1a] hover:border-primary/50 transition-all duration-200 rounded-xl border border-[#1d283a]">
+            <div>
+              <div
+                class="text-primary icon transition-all w-12 h-12 duration-200 bg-primary/10 inline-flex items-center justify-center rounded-xl">
+                <i class="fa-solid text-lg fa-location-dot"></i>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-white">Location</h1>
+              <p class="text-muted">India</p>
+            </div>
+          </div>
+          <div class="bg-primary/15 rounded-2xl border border-[#ff052633] p-5.5 md:p-6.75">
+            <h3 class="font-semibold text-white text-lg mb-2">
+              Working Hours
+            </h3>
+            <p class="text-muted text-sm">
+              Monday - Friday: 9:00 AM - 6:00 PM (IST)<br />Weekend: By
+              appointment only
+            </p>
+          </div>
+        </div>
+        <form class="border border-[#1d283a] bg-[#040a1a] p-6 md:p-9 rounded-2xl flex flex-col h-full">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="space-y-2 flex flex-col col-span-1">
+              <label class="text-white font-medium text-sm">Name</label>
+              <input
+                class="bg-[#030711] border border-[#1d283a] mt-2.25 rounded-md focus:outline-2 focus:outline-primary text-muted py-2.25 px-3.5"
+                placeholder="John Doe" />
+            </div>
+            <div>
+              <div class="space-y-2 flex flex-col col-span-1">
+                <label class="text-white font-medium text-sm">Email</label>
+                <input
+                  class="bg-[#030711] border border-[#1d283a] mt-2.25 rounded-md focus:outline-2 focus:outline-primary text-muted py-2.25 px-3.5"
+                  placeholder="john@example.com" />
+              </div>
+            </div>
+            <div class="space-y-2 flex flex-col col-span-1">
+              <label class="text-white font-medium text-sm">Phone (optional)</label>
+              <input
+                class="bg-[#030711] border border-[#1d283a] mt-2.25 rounded-md focus:outline-2 focus:outline-primary text-muted py-2.25 px-3.5"
+                placeholder="+1 (555) 000-0000" />
+            </div>
+            <div>
+              <div class="space-y-2 flex flex-col col-span-1">
+                <label class="text-white font-medium text-sm">Service of Interest</label>
+                <select
+                  class="bg-[#030711] border border-[#1d283a] mt-2.25 rounded-md focus:outline-2 focus:outline-primary text-muted py-2.25 px-3.5">
+                  <option value="" disabled selected>Select a Service</option>
+                  <option value="">Web Development</option>
+                  <option value="">Mobile Development</option>
+                  <option value="">UI/UX Design</option>
+                  <option value="">IT Consulting</option>
+                  <option value="">Maintenance & Support</option>
+                  <option value="">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col mt-4 space-y-2 flex-1">
+            <label class="text-white font-medium text-sm">Message</label>
+            <textarea
+              class="flex-1 bg-[#030711] border border-[#1d283a] rounded-md focus:outline-2 focus:outline-primary text-muted py-2.5 px-3.5 resize-none"
+              placeholder="Tell us about your project..."></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+    <section class="px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#051729]">
+      <div class="bg-primary/15 rounded-3xl border border-[#ff052633] p-8 sm:p-12 md:p-16 lg:p-20">
+        <h2 class="text-3xl text-white text-center md:text-4xl lg:text-5xl font-bold mb-6">
+          Ready to Transform Your
+          <span class="gradient-text">Digital Presence?</span>
+        </h2>
+        <p class="text-lg text-muted text-center mb-10 max-w-2xl">
+          Let's discuss how we can help you build scalable, secure, and
+          high-performance solutions that drive real business results.
+        </p>
+        <div class="flex gap-4 justify-center flex-col items-center md:flex-row">
+          <a class="bg-primary text-lg font-bold h-14 px-10 hover:-translate-y-0.5 hover:shadow-2xl shadow-primary/80 transition-all duration-200 rounded-xl text-white flex gap-2 justify-center items-center text-nowrap"
+            href="">
+            Start your project <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="text-lg font-bold h-14 px-10 border-2 border-[#e1e7ef33] hover:text-primary hover:border-primary transition-all duration-200 rounded-xl text-white flex gap-2 justify-center items-center text-nowrap"
+            href="">
+            Learn more about us</a>
+        </div>
+      </div>
+    </section>
+    <hr class="text-[#1d283a]" />
+  </main>
+  <footer class="px-4 sm:px-6 lg:px-8 pt-8 pb-8 md:py-20 bg-[#040a1a]">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div class="col-span-1">
+        <div class="flex justify-center md:justify-start items-center gap-3 mb-4">
+          <a href=""><img class="transition-all duration-200 w-10 h-10" src="images/logo.png" /></a>
+          <a class="flex flex-col items-center justify-center font-black" href="">
+            <span class="text-white font-montserrat text-lg">URBAN<span class="text-red-600">CODE</span></span>
+            <span style="letter-spacing: 5px" class="text-muted font-poppins font-medium text-[10px]">SOLUTIONS</span>
+          </a>
+        </div>
+        <p class="text-muted text-center md:text-start text-sm leading-relaxed mb-6">
+          Building secure, high-performance digital solutions tailored to real
+          business needs.
+        </p>
+        <div class="flex gap-3 justify-center md:justify-start items-center mb-4">
+          <a class="bg-[#0f162980] text-white hover:text-primary transition-all duration-200 p-2 rounded-lg" href=""><i
+              class="fa-brands fa-facebook"></i></a>
+          <a class="bg-[#0f162980] text-white hover:text-primary transition-all duration-200 p-2 rounded-lg" href=""><i
+              class="fa-brands fa-instagram"></i></a>
+          <a class="bg-[#0f162980] text-white hover:text-primary transition-all duration-200 p-2 rounded-lg" href=""><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a class="bg-[#0f162980] text-white hover:text-primary transition-all duration-200 p-2 rounded-lg" href=""><i
+              class="fa-brands fa-twitter"></i></a>
+          <a class="bg-[#0f162980] text-white hover:text-primary transition-all duration-200 p-2 rounded-lg" href=""><i
+              class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="flex justify-center md:justify-start items-center">
+          <a class="bg-[#25d366] h-9 inline-flex gap-2 font-semibold text-white rounded-lg transition-all duration-200 hover:bg-[#128c7e] items-center justify-center text-sm px-4 hover:shadow-xl hover:shadow-primary/20"
+            href=""><i class="fa-regular fa-comment"></i> Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="text-center md:text-left">
+        <h4 class="font-semibold text-white mb-4">Company</h4>
+        <ul class="space-y-3">
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">Services</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">About</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">Portfolio</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="/">Technologies</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="/">Careers</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center md:text-left">
+        <h4 class="font-semibold text-white mb-4">Services</h4>
+        <ul class="space-y-3">
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="/services">Web & Application Development</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">SaaS & Startup MVP Development</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">Mobile Apps Development</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">E-commerce Systems</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">UI/UX Design</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href="">Maintenance & Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="text-center md:text-start">
+        <h4 class="font-semibold text-white mb-4">Contact</h4>
+        <ul class="space-y-3">
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href=""><i class="fa-regular fa-envelope"></i>
+              urbancodesolution@gmail.com</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href=""><i class="fa-solid fa-phone"></i> +91 78746 71101</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted transition-all duration-200 ease-out hover:text-primary hover:translate-x-1 inline-block"
+              href=""><i class="fa-solid fa-location-dot"></i> India, USA, Canada,
+              Australia, Dubai, UK, New Zealand, Finland, Ireland</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-[#1D283A] flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-muted text-center md:text-start">
+        © 2026 UrbanCode Solution. All rights reserved.
+      </p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="text-sm text-muted hover:text-primary transition-all duration-200">Privacy
+          Policy</a><a href="#" class="text-sm text-muted hover:text-primary transition-all duration-200">Terms of
+          Service</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const icon = menuBtn.querySelector("i");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("translate-y-16");
+
+      icon.classList.toggle("fa-bars");
+      icon.classList.toggle("fa-xmark");
+    });
+  </script>
+  <script>
+    const buttons = document.querySelectorAll(".faq-btn");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector("svg");
+        const parent = button.parentElement;
+        const isOpen =
+          content.style.maxHeight && content.style.maxHeight !== "0px";
+        document.querySelectorAll(".faq-content").forEach((c) => {
+          c.style.maxHeight = "0px";
+        });
+        document.querySelectorAll(".faq-item").forEach((item) => {
+          item.classList.remove("border-primary");
+          item.classList.add("border-[#1d283a]");
+        });
+        document.querySelectorAll(".faq-btn svg").forEach((svg) => {
+          svg.classList.remove("rotate-180");
+        });
+        if (!isOpen) {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.classList.add("rotate-180");
+          parent.classList.remove("border-[#1d283a]");
+          parent.classList.add("border-primary");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
